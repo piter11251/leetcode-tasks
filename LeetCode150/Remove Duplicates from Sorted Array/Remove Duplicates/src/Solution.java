@@ -2,7 +2,9 @@ import java.util.*;
 
 public class Solution {
     public int removeDuplicates(int[] nums) {
+        // find duplicates
         int i=0;
+        int[] helperArr = new int[nums.length];
         Set<Integer> newSet = new TreeSet<>();
         for(int n: nums){
             if(newSet.add(n)){
